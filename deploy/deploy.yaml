@@ -1,0 +1,14 @@
+---
+#pod creation
+apiVersion:  v1
+kind: Pod
+metadata:
+  name: my-kubepod
+  labels:
+    app: my-frontendpod
+    tier: dev
+spec:
+  hostNetwork:  true
+  containers:
+  - name:  my-frontendcontainer
+    image: ursbrchandra/mywebappfrontend:1.0
